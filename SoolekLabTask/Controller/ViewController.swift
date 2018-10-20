@@ -28,25 +28,28 @@ class ViewController: UIViewController {
     
     @IBAction func registraionAction(_ sender: Any) {
         
-         self.performSegue(withIdentifier: "registerScreen", sender: self)
+         self.performSegue(withIdentifier: "registerData", sender: self)
     }
     
     @IBAction func loginAction(_ sender: Any) {
         
         Auth.auth().signIn(withEmail: emailText.text!, password: passwordText.text!) { (user, error) in
             
-            if error != nil {
-    
+            if error == nil {
+                
+                print("Log in successful!")
+                
+               self.performSegue(withIdentifier: "goToData", sender: self)
+                
+             
+            } else {
+                
+                
                 print(error!)
                 
                 self.loginButtonAnimation.vibration()
-        
-                self.variableLabelText.text = "Error in Login"
                 
-            } else {
-                print("Log in successful!")
-        
-                self.performSegue(withIdentifier: "goToData", sender: self)
+                self.variableLabelText.text = "Error in Login "
                 
             }
             

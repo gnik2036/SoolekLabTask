@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2AABDA6AED068C63C0724F25 /* Pods_SoolekLabTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCC0917C259DDAC4F7AA59BC /* Pods_SoolekLabTask.framework */; };
+		F25D75FC217B6AC9006239E9 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25D75FB217B6AC9006239E9 /* Actor.swift */; };
+		F25D761C217BAE77006239E9 /* actorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25D761B217BAE77006239E9 /* actorModel.swift */; };
 		F2A1D383217A3C1200C92E04 /* RegistraionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A1D382217A3C1100C92E04 /* RegistraionVC.swift */; };
 		F2A1D385217A505300C92E04 /* buttonExten.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A1D384217A505300C92E04 /* buttonExten.swift */; };
 		F2A1D387217A5EDE00C92E04 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A1D386217A5EDE00C92E04 /* HomeVC.swift */; };
@@ -22,6 +24,8 @@
 /* Begin PBXFileReference section */
 		3573E005C2B5C3254204F601 /* Pods-SoolekLabTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoolekLabTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoolekLabTask/Pods-SoolekLabTask.debug.xcconfig"; sourceTree = "<group>"; };
 		7BFED59C72912AD7FE7AF330 /* Pods-SoolekLabTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoolekLabTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoolekLabTask/Pods-SoolekLabTask.release.xcconfig"; sourceTree = "<group>"; };
+		F25D75FB217B6AC9006239E9 /* Actor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
+		F25D761B217BAE77006239E9 /* actorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = actorModel.swift; sourceTree = "<group>"; };
 		F2A1D382217A3C1100C92E04 /* RegistraionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegistraionVC.swift; path = /Users/shady/Desktop/SoolekLabTask/SoolekLabTask/Controller/RegistraionVC.swift; sourceTree = "<absolute>"; };
 		F2A1D384217A505300C92E04 /* buttonExten.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonExten.swift; sourceTree = "<group>"; };
 		F2A1D386217A5EDE00C92E04 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -65,12 +69,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F25D761D217BCAB0006239E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F25D761B217BAE77006239E9 /* actorModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F2A1D37D217A386200C92E04 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				F2F2AFF12178B810009289E1 /* AppDelegate.swift */,
 				F2A1D382217A3C1100C92E04 /* RegistraionVC.swift */,
-				F2A1D384217A505300C92E04 /* buttonExten.swift */,
 				F2F2AFF32178B810009289E1 /* ViewController.swift */,
 				F2A1D386217A5EDE00C92E04 /* HomeVC.swift */,
 			);
@@ -80,6 +91,8 @@
 		F2A1D37F217A388B00C92E04 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F25D75FB217B6AC9006239E9 /* Actor.swift */,
+				F2A1D384217A505300C92E04 /* buttonExten.swift */,
 				F2F2AFF52178B810009289E1 /* Main.storyboard */,
 				F2F2AFFA2178B814009289E1 /* LaunchScreen.storyboard */,
 				F2F2AFF82178B814009289E1 /* Assets.xcassets */,
@@ -108,6 +121,7 @@
 		F2F2AFF02178B80F009289E1 /* SoolekLabTask */ = {
 			isa = PBXGroup;
 			children = (
+				F25D761D217BCAB0006239E9 /* Model */,
 				F2A1D37F217A388B00C92E04 /* View */,
 				F2A1D37D217A386200C92E04 /* Controller */,
 				F2F2AFFD2178B814009289E1 /* Info.plist */,
@@ -240,7 +254,9 @@
 				F2A1D385217A505300C92E04 /* buttonExten.swift in Sources */,
 				F2A1D387217A5EDE00C92E04 /* HomeVC.swift in Sources */,
 				F2F2AFF42178B810009289E1 /* ViewController.swift in Sources */,
+				F25D75FC217B6AC9006239E9 /* Actor.swift in Sources */,
 				F2F2AFF22178B810009289E1 /* AppDelegate.swift in Sources */,
+				F25D761C217BAE77006239E9 /* actorModel.swift in Sources */,
 				F2A1D383217A3C1200C92E04 /* RegistraionVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
