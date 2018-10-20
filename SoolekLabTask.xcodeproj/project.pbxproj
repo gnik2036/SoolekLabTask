@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2AABDA6AED068C63C0724F25 /* Pods_SoolekLabTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCC0917C259DDAC4F7AA59BC /* Pods_SoolekLabTask.framework */; };
+		F2A1D383217A3C1200C92E04 /* RegistraionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A1D382217A3C1100C92E04 /* RegistraionVC.swift */; };
+		F2A1D385217A505300C92E04 /* buttonExten.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A1D384217A505300C92E04 /* buttonExten.swift */; };
+		F2A1D387217A5EDE00C92E04 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A1D386217A5EDE00C92E04 /* HomeVC.swift */; };
 		F2F2AFF22178B810009289E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F2AFF12178B810009289E1 /* AppDelegate.swift */; };
 		F2F2AFF42178B810009289E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F2AFF32178B810009289E1 /* ViewController.swift */; };
 		F2F2AFF72178B810009289E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F2AFF52178B810009289E1 /* Main.storyboard */; };
@@ -19,6 +22,9 @@
 /* Begin PBXFileReference section */
 		3573E005C2B5C3254204F601 /* Pods-SoolekLabTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoolekLabTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoolekLabTask/Pods-SoolekLabTask.debug.xcconfig"; sourceTree = "<group>"; };
 		7BFED59C72912AD7FE7AF330 /* Pods-SoolekLabTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoolekLabTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoolekLabTask/Pods-SoolekLabTask.release.xcconfig"; sourceTree = "<group>"; };
+		F2A1D382217A3C1100C92E04 /* RegistraionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegistraionVC.swift; path = /Users/shady/Desktop/SoolekLabTask/SoolekLabTask/Controller/RegistraionVC.swift; sourceTree = "<absolute>"; };
+		F2A1D384217A505300C92E04 /* buttonExten.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonExten.swift; sourceTree = "<group>"; };
+		F2A1D386217A5EDE00C92E04 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		F2F2AFEE2178B80F009289E1 /* SoolekLabTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoolekLabTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2F2AFF12178B810009289E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2F2AFF32178B810009289E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +65,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F2A1D37D217A386200C92E04 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F2F2AFF12178B810009289E1 /* AppDelegate.swift */,
+				F2A1D382217A3C1100C92E04 /* RegistraionVC.swift */,
+				F2A1D384217A505300C92E04 /* buttonExten.swift */,
+				F2F2AFF32178B810009289E1 /* ViewController.swift */,
+				F2A1D386217A5EDE00C92E04 /* HomeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F2A1D37F217A388B00C92E04 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F2F2AFF52178B810009289E1 /* Main.storyboard */,
+				F2F2AFFA2178B814009289E1 /* LaunchScreen.storyboard */,
+				F2F2AFF82178B814009289E1 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F2F2AFE52178B80F009289E1 = {
 			isa = PBXGroup;
 			children = (
@@ -80,11 +108,8 @@
 		F2F2AFF02178B80F009289E1 /* SoolekLabTask */ = {
 			isa = PBXGroup;
 			children = (
-				F2F2AFF12178B810009289E1 /* AppDelegate.swift */,
-				F2F2AFF32178B810009289E1 /* ViewController.swift */,
-				F2F2AFF52178B810009289E1 /* Main.storyboard */,
-				F2F2AFF82178B814009289E1 /* Assets.xcassets */,
-				F2F2AFFA2178B814009289E1 /* LaunchScreen.storyboard */,
+				F2A1D37F217A388B00C92E04 /* View */,
+				F2A1D37D217A386200C92E04 /* Controller */,
 				F2F2AFFD2178B814009289E1 /* Info.plist */,
 				F2F2B0032178BBA5009289E1 /* GoogleService-Info.plist */,
 			);
@@ -166,8 +191,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SoolekLabTask/Pods-SoolekLabTask-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
@@ -177,8 +200,6 @@
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
@@ -196,15 +217,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SoolekLabTask-checkManifestLockResult.txt",
 			);
@@ -220,8 +237,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2A1D385217A505300C92E04 /* buttonExten.swift in Sources */,
+				F2A1D387217A5EDE00C92E04 /* HomeVC.swift in Sources */,
 				F2F2AFF42178B810009289E1 /* ViewController.swift in Sources */,
 				F2F2AFF22178B810009289E1 /* AppDelegate.swift in Sources */,
+				F2A1D383217A3C1200C92E04 /* RegistraionVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
